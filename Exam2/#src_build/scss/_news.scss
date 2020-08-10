@@ -1,0 +1,25 @@
+.news {
+  background: url("../img/news-bg.jpg") center center / cover no-repeat;
+  padding: 180px 20px 140px 20px;
+
+  &__title_before {
+    color: #fff;
+    position: relative;
+    display: block;
+    text-align: center;
+
+    &:before {
+      content: "";
+      width: 100px;
+      height: 1px;
+      background-color: #fff;
+      position: absolute;
+      top: -40px;
+      left: 50%;
+      transform: translate(-50%);
+    }
+  }
+}
+
+@import "news-slider";
+

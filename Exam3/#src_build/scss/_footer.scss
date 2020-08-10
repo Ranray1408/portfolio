@@ -1,0 +1,40 @@
+.footer{
+  background-color: #9f9acf;
+  padding: 80px 20px 80px 20px;
+
+  &__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__ps{
+    font-family: PTSans, sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.36px;
+    text-align: left;
+    color: #ffffff;
+  }
+  &__social-list{
+    max-width: 260px;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 640px){
+  .footer{
+    &__container{
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    &__social-list{
+      margin-top: 20px;
+    }
+
+    &__ps{
+      text-align: center;
+    }
+  }
+}
+

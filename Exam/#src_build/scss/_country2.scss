@@ -1,0 +1,20 @@
+.country2 {
+  background: url("../img/spain2-bg.jpg") center center / cover no-repeat;
+  color: #fff;
+  padding: 300px 20px 100px 20px;
+
+  &__container {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .country2 {
+    padding: 100px 20px 100px 20px;
+
+    &__info-block {
+      margin: 0 auto;
+    }
+  }
+}

@@ -1,0 +1,123 @@
+.header {
+  background: url("../img/header-bg.jpg") center center / cover no-repeat;
+  padding: 53px 20px 50px 20px;
+
+
+  &__navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  &__navigation_scroll {
+    max-width: 1170px;
+    width: 100%;
+    position: fixed;
+    animation: menuAnimation .5s forwards;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: rgba(17, 25, 35, .5);
+    border-radius: 0 0 10px 10px;
+    padding: 10px;
+    z-index: 10;
+  }
+
+  &__menu {
+    max-width: 425px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__menu-item {
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.57;
+    letter-spacing: normal;
+    text-transform: uppercase;
+    position: relative;
+
+    & a {
+      color: #fff;
+
+      &:hover {
+        color: #3a82a2;
+      }
+    }
+  }
+
+  &__decor-circle {
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -24px;
+  }
+
+  &__decor-circle_active {
+    background-color: #fff;
+  }
+
+  &__scroll-down {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    animation: scroll-down 1s ease-in-out alternate infinite;
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      border-top: 1px solid #fff;
+      border-left: 1px solid #fff;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(-135deg);
+    }
+  }
+}
+
+@import "header-slider";
+
+@keyframes menuAnimation {
+  from {
+    height: 0;
+  }
+  to {
+    height: 55px;
+  }
+}
+
+@keyframes scroll-down {
+  from {
+    top: 10px;
+  }
+  to {
+    top: -10px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+
+  .header__navigation{
+    .dis-none-1200{
+      display: none;
+    }
+  }
+
+}

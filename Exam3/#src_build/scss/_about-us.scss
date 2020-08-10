@@ -1,0 +1,157 @@
+.about-us {
+  background-color: #ebebeb;
+  padding: 124px 20px 0 20px;
+
+  &__content {
+    display: flex;
+    margin-bottom: 120px;
+  }
+
+  &__main-img {
+    max-width: 380px;
+    max-height: 555px;
+    position: relative;
+    flex-shrink: 0;
+  }
+
+  &__description {
+    font-size: 20px;
+    color: #665f60;
+    padding: 78px 34px 0 123px;
+
+    & :not(last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__inner-wrapper {
+    position: absolute;
+    z-index: 10;
+    top: 75px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  &__icon {
+    max-width: 50px;
+    max-height: 54px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-size: 36px;
+    color: #fefbfc;
+  }
+
+  &__btn {
+    display: block;
+    margin: 90px auto 0 auto;
+  }
+
+  &__services {
+    display: flex;
+  }
+
+  &__services-wrapper {
+    max-width: 760px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__services-block {
+    max-width: 380px;
+    width: 100%;
+    max-height: 400px;
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 133px;
+  }
+
+  &__services-block_bg {
+    background-color: #dbdbdb;
+  }
+
+  &__icon {
+    max-width: 47px;
+    max-height: 60px;
+  }
+
+  &__services-title {
+    font-family: PTSans, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #665f60;
+    text-align: center;
+    margin: 30px 0 20px 0;
+  }
+
+  &__services-description {
+    font-family: PTSans, sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    text-align: center;
+    color: #665f60;
+    max-width: 215px;
+    margin: 0 auto;
+  }
+
+  &__our-services {
+    max-width: 410px;
+    max-height: none;
+  }
+
+  &__icon-services {
+    max-width: 62px;
+    max-height: 60px;
+  }
+
+  &__title_services {
+    white-space: nowrap;
+  }
+}
+
+@media screen and (max-width: 1224px){
+  .about-us{
+    &__services{
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+
+    &__our-services{
+      width: 100%;
+      max-width: none;
+      max-height: 555px;
+    }
+  }
+}
+
+@media screen and (max-width: 798px){
+  .about-us{
+    &__services-wrapper{
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .about-us {
+    &__content {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 50px;
+    }
+
+    &__description {
+      padding: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .about-us {
+    &__description {
+      padding: 20px;
+    }
+  }
+}

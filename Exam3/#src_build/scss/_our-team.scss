@@ -1,0 +1,19 @@
+.our-team{
+  padding: 54px 20px 98px 20px;
+  background-color: #ebebeb;
+
+  &__icon{
+    max-width: 60px;
+    max-height: 60px;
+    margin: 0 auto;
+  }
+
+  &__title{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+    color: #665f60;
+  }
+}
+
+@import "our-team-slider";

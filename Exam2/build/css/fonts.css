@@ -1,0 +1,17 @@
+@font-face {
+    font-family: gothamBold;
+    src: url("../fonts/gothamBold/Gotham-Bold.svg");
+    src: url("../fonts/gothamBold/Gotham-Bold.eot");
+    src: url("../fonts/gothamBold/Gotham-Bold.ttf");
+    src: url("../fonts/gothamBold/Gotham-Bold.woff");
+    src: url("../fonts/gothamBold/Gotham-Bold.woff2");
+}
+
+@font-face {
+    font-family: gothamReg;
+    src: url("../fonts/gothamRegular/GothamMedium.svg");
+    src: url("../fonts/gothamRegular/GothamMedium.eot");
+    src: url("../fonts/gothamRegular/GothamMedium.ttf");
+    src: url("../fonts/gothamRegular/GothamMedium.woff");
+    src: url("../fonts/gothamRegular/GothamMedium.woff2");
+}

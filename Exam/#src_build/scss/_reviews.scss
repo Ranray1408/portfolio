@@ -1,0 +1,44 @@
+.reviews{
+  background: url("../img/reviews-bg.jpg") center center / cover no-repeat;
+  padding: 120px 20px 200px 20px;
+
+  &__container {
+    text-align: center;
+  }
+
+  &__title{
+    margin-bottom: 94px;
+  }
+}
+
+
+@media screen  and (max-width: 1200px){
+  .reviews{
+
+    .tourist-review__content_adaptive{
+      padding: 20px;
+    }
+  }
+}
+
+@media screen  and (max-width: 868px){
+  .reviews{
+    .tourist-review{
+      flex-direction: column;
+    }
+
+    .tourist-review_adaptive{
+      max-width: 445px;
+      margin: 0 auto;
+    }
+
+  }
+}
+
+@media screen and (max-width: 480px){
+  .reviews{
+    &__title{
+      font-size: 30px;
+    }
+  }
+}

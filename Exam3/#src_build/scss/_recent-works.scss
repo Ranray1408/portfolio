@@ -1,0 +1,25 @@
+.recent-works {
+  background: url("../img/recent-works-bg.jpg") center center / cover no-repeat;
+  padding: 50px 20px 60px 20px;
+
+  &__icon {
+    max-width: 40px;
+    max-height: 60px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    color: #fff;
+    text-align: center;
+    font-size: 36px;
+  }
+
+  &__btn {
+    margin: 105px auto 0 auto;
+    display: block;
+    border-color: #fff;
+    color: #fff;
+  }
+}
+
+@import "recent-works-slider";

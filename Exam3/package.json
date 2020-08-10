@@ -1,0 +1,26 @@
+{
+  "name": "homework31",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "@babel/runtime": "^7.10.4",
+    "@glidejs/glide": "^3.4.1",
+    "browserify": "^16.5.1",
+    "jsdom": "^16.2.2",
+    "jwt-simple": "^0.5.6",
+    "sass": "^1.26.7"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.10.4",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^4.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

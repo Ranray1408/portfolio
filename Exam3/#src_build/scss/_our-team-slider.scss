@@ -1,0 +1,142 @@
+.our-team {
+  &__slider {
+    position: relative;
+
+    .slick-list {
+      overflow: hidden;
+    }
+
+    .slick-track {
+      display: flex;
+      padding-top: 130px;
+    }
+
+    .slick-prev,
+    .slick-next {
+      width: 40px;
+      height: 40px;
+      border: none;
+      background-color: transparent;
+      border-top: 1px solid #665f60;
+      border-left: 1px solid #665f60;
+      font-size: 0;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%) rotate(-45deg);
+      z-index: 10;
+
+      &:hover {
+        opacity: .5;
+        cursor: pointer;
+      }
+    }
+
+    .slick-prev {
+      left: -60px;
+    }
+
+    .slick-next {
+      right: -60px;
+      transform: translate(-50%) rotate(135deg);
+    }
+
+    .slick-dots {
+      display: flex;
+      position: absolute;
+      bottom: -56px;
+      left: 50%;
+      transform: translate(-50%);
+    }
+
+    .slick-dots li {
+      font-size: 0;
+      margin-left: 5px;
+    }
+
+    .slick-dots button {
+      width: 15px;
+      height: 15px;
+      background-color: transparent;
+      border: 1px solid #ebebeb;
+      border-radius: 50%;
+      padding: 0;
+    }
+
+    .slick-dots li.slick-active {
+      background-color: #fff;
+      border-radius: 50%;
+    }
+  }
+
+  &__slide {
+    background-color: #fff;
+    position: relative;
+    padding-top: 163px;
+    margin-right: 30px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__slide-img {
+    width: 100%;
+    max-width: 240px;
+    max-height: 240px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__author-name {
+    font-family: ProximaNova, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #9f9acf;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__author-prof {
+    font-family: PTSans, sans-serif;
+    font-size: 24px;
+    font-style: italic;
+    text-align: center;
+    color: #665f60;
+    margin: 34px 0 50px 0;
+  }
+
+  &__social-list {
+    padding: 20px 0 20px 0;
+    background-color: #9f9acf;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
+
+@media screen and (max-width: 1200px) {
+  .our-team {
+    &__slider {
+      .slick-next,
+      .slick-prev {
+        top: 107%;
+        left: 20%;
+      }
+
+      .slick-next {
+        left: 80%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .our-team{
+    &__slide{
+      margin: 0;
+    }
+  }
+}

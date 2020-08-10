@@ -1,0 +1,95 @@
+$hover-color: #9f9acf;
+
+*{
+  transition: .3s;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body{
+  font-family: sans-serif;
+}
+
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.container{
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+h2, h3{
+  font-family: ProximaNova, sans-serif;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.31;
+  letter-spacing: normal;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.btn{
+  border: solid 1px #7d7a7c;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-family: PTSans, sans-serif;
+  font-size: 15px;
+  font-style: italic;
+  color: #7d7a7c;
+  max-width: 195px;
+  width: 100%;
+  height: 50px;
+
+  &:hover{
+    cursor: pointer;
+    background-color: #7d7a7c;
+    color: #fff;
+  }
+}
+
+.social-list {
+  display: flex;
+
+  &__item {
+    background-color: #ebebeb;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    
+    &:hover{
+      background-color: #7d7a7c;
+    }
+
+    svg {
+      width: 20px;
+      height: 20px;
+      fill: #9f9acf;
+      &:hover{
+        fill: #fff;
+      }
+    }
+
+    a {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__item:not(:last-child){
+    margin-right: 13px;
+  }
+}
+
+@import "header";
+@import "about-us";
+@import "recent-works";
+@import "our-team";
+@import "map";
+@import "footer";
+@import "mob-menu";

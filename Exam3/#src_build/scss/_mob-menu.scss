@@ -1,0 +1,56 @@
+.header {
+  &__burger-menu {
+    svg {
+      max-width: 40px;
+      max-height: 40px;
+      fill: #fff;
+
+      &:hover {
+        fill: $hover-color;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__mob-menu {
+    display: block;
+    left: 0;
+    top: 0;
+    max-width: 100%;
+    position: fixed;
+    background-color: #474763;
+    flex-direction: column;
+    animation: openMenu .5s ease-in-out forwards;
+    z-index: 20;
+  }
+
+  &__burger-menu_opened {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 20;
+    animation: delayBurger .6s ease-in-out forwards;
+  }
+
+  &__menu_hidden{
+    display: none;
+  }
+}
+
+@keyframes openMenu{
+  from{
+    left: 200%;
+  }
+  to{
+    left: 0;
+  }
+}
+
+@keyframes delayBurger{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}

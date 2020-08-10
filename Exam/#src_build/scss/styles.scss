@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+  transition: .3s;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'aleo', sans-serif;
+  min-width: 320px;
+}
+
+
+.container {
+  max-width: 1110px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.btn {
+  max-width: 255px;
+  width: 100%;
+  height: 60px;
+  background-color: #5474fd;
+  font-family: Aleo, sans-serif;
+  color: #fff;
+  border: none;
+  flex-shrink: 0;
+  box-shadow: none;
+  text-transform: uppercase;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+
+  &__flare {
+    width: 80%;
+    height: 200%;
+    background-color: rgba(255, 255, 255, .1);
+    position: absolute;
+    right: -20px;
+    top: -56px;
+    transform: rotate(35deg);
+  }
+
+
+  &:hover {
+    color: #979797;
+    cursor: pointer;
+  }
+  &:hover span{
+    width: 230%;
+  }
+}
+
+.title {
+  font-family: Aleo, sans-serif;
+  font-size: 36px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.logo {
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.description {
+  font-family: JosefinSans, sans-serif;
+  line-height: 26px;
+  font-weight: 400;
+  letter-spacing: 0.31em;
+
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.info-block {
+  max-width: 540px;
+  background-color: rgba(0, 0, 0, .7);
+  font-family: JosefinSans, sans-serif;
+  padding: 50px 30px;
+
+  &__name {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 400;
+    letter-spacing: 0.075em;
+    color: #e8e8e8;
+    opacity: .6;
+  }
+
+  &__title {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 30px 0 30px 0;
+  }
+
+  &__description {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    margin-bottom: 50px;
+    opacity: .6;
+  }
+}
+
+.tourist-review {
+  display: flex;
+  font-family: JosefinSans, sans-serif;
+
+  &__photo {
+    max-width: 445px;
+    max-height: 284px;
+    flex-shrink: 0;
+  }
+
+  &__content {
+    background-color: #333;
+    padding: 50px 54px 48px 60px;
+    text-align: justify;
+  }
+
+  &__name {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #fefefe;
+    opacity: .7;
+    margin: 0 0 33px 0;
+  }
+
+  &__text {
+    font-size: 14px;
+    color: #e8e8e8;
+    opacity: .7;
+    line-height: 23px;
+  }
+
+  &__quote {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    fill: #5474fd;
+    margin-bottom: 5px;
+  }
+}
+
+@import "header";
+@import "choose-us";
+@import "how-works";
+@import "country1";
+@import "country2";
+@import "reviews";
+@import "footer";

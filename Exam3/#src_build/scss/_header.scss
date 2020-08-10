@@ -1,0 +1,114 @@
+.header {
+  background: url("../img/header-bg.jpg") center center  / cover no-repeat;
+  text-align: center;
+  padding-bottom: 400px;
+
+  &__navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 36px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  &__navigation_scroll {
+    max-width: 1170px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 20;
+    background-color: rgba(159, 154, 207, .8);
+    padding-top: 10px;
+    border-radius: 4px;
+  }
+
+  &__menu {
+    max-width: 576px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: ProximaNova, sans-serif;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 2.5;
+  }
+
+  &__menu-item {
+    a {
+      color: #fff;
+
+      &:hover {
+        color: $hover-color;
+      }
+    }
+  }
+
+  &__title {
+    font-family: ProximaNova, sans-serif;
+    font-size: 72px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.83;
+    letter-spacing: normal;
+    color: #fefefb;
+    text-transform: uppercase;
+    margin: 0;
+    padding-top: 330px;
+  }
+
+  &__subtitle {
+    font-family: PTSans, sans-serif;
+    font-size: 30px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: italic;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #fefdfd;
+    margin-top: 40px;
+  }
+}
+
+.dis-none {
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+  .dis-block960 {
+    display: block;
+  }
+  .header {
+    padding: 0 20px 170px 20px;
+
+    &__menu_none {
+      display: none;
+    }
+
+    &__title {
+      font-size: 40px;
+      padding-top: 150px;
+    }
+
+    &__subtitle {
+      font-size: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .header {
+    &__title {
+      font-size: 30px;
+    }
+
+    &__navigation {
+      padding: 10px;
+    }
+  }
+}

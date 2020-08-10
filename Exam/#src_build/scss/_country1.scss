@@ -1,0 +1,16 @@
+.country1 {
+  background: url("../img/spain1-bg.jpg") center center / cover no-repeat;
+  color: #fff;
+  padding: 300px 20px 100px 20px;
+
+}
+
+@media screen and (max-width: 768px) {
+  .country1 {
+    padding: 100px 20px 100px 20px;
+
+    &__info-block{
+      margin: 0 auto;
+    }
+  }
+}
